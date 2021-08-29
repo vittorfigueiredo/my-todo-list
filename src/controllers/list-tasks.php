@@ -13,10 +13,12 @@ if ($quantidade_tasks > 0) {
   echo json_encode([
     "success" => true,
     "tasks" => $results
-  ]); die;
+  ]);
+  die;
 }
 
 echo json_encode([
   "success" => true,
   "tasks" => []
-]); die;
+]);
+die;
