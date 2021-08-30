@@ -1,0 +1,15 @@
+{
+    "name": "vitor/my-todo-list",
+    "autoload": {
+        "psr-4": {
+            "Vitor\\MyTodoList\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vitor Figueiredo",
+            "email": "vitorfigueiredo855@gmail.com"
+        }
+    ],
+    "require": {}
+}
