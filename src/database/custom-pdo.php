@@ -1,10 +1,10 @@
 <?php
 
 $driver = "mysql";
-$host = "localhost";
-$username = "";
-$password = "";
-$database = "";
+$host = "sql10.freesqldatabase.com";
+$username = "sql10433590";
+$password = "qyzbKzmBm8";
+$database = "sql10433590";
 
 try {
   $pdo = new PDO("$driver:host=$host;dbname=$database", $username, $password);
