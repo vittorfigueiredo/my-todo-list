@@ -4,6 +4,7 @@ require __DIR__ . "/../database/custom-pdo.php";
 
 $sql = "select * from task";
 $statement = $pdo->prepare($sql);
+$statement->execute();
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 $quantidade_tasks = count($results);
