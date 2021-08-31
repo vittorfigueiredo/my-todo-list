@@ -3,7 +3,7 @@
 $driver = "mysql";
 $host = "sql10.freesqldatabase.com";
 $username = "sql10433590";
-$password = "qyzbKzmBm8";
+$password = "lovyJQHUVfSHQRrS";
 $database = "sql10433590";
 
 try {
