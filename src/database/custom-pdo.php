@@ -1,10 +1,12 @@
 <?php
 
-$driver = "mysql";
-$host = "sql10.freesqldatabase.com";
-$username = "sql10433590";
-$password = "lovyJQHUVfSHQRrS";
-$database = "sql10433590";
+require __DIR__ . "/../configs/dotenv.php";
+
+$driver   = $_ENV["DB_DRIVER"];
+$host     = $_ENV["DB_HOST"];
+$username = $_ENV["USERNAME"];
+$password = $_ENV["PASSWORD"];
+$database = $_ENV["DATABASE"];
 
 try {
   $pdo = new PDO("$driver:host=$host;dbname=$database", $username, $password);
