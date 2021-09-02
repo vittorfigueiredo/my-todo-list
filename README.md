@@ -1,6 +1,6 @@
-### API MY TODO LIST 📖
+# API MY TODO LIST 📖
 
-## Passo a passo para rodar o projeto em seu ambiente de desenvolvimento:
+### Passo a passo para rodar o projeto em seu ambiente de desenvolvimento:
 
 1 - Primeiro clone o repositório para seu diretório de projetos ou qualquer outro caminho na sua máquina.
 
@@ -25,15 +25,15 @@ CREATE TABLE task (
 );
 ```
 
-### Rotas disponiveis
+## Rotas disponiveis ⬇
 
-# Listar todas as tasks:
+### Listar todas as tasks:
 GET: `/src/controllers/list-tasks.php`
-# Adicionar uma task:
+### Adicionar uma task:
 POST: `/src/controllers/add-task.php`
 
-# Atualizar uma task:
+### Atualizar uma task:
 POST: `/src/controllers/update-task.php`
 
-# Deletar uma task:
+### Deletar uma task:
 POST: `/src/controllers/delete-task.php`
