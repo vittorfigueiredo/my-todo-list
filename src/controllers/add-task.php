@@ -20,7 +20,7 @@ $uuid = uuidGenerate();
 $name = $body["name"];
 $description = $body["description"];
 
-$sql = "insert into task set id = '$uuid', name = '$name', description = '$description'";
+$sql = "insert into task (id, name, description) values('$uuid', '$name', '$description')";
 $statement = $pdo->prepare($sql);
 $result = $statement->execute();
 
