@@ -36,4 +36,7 @@ POST: `/src/controllers/add-task.php`
 POST: `/src/controllers/update-task.php`
 
 ### Deletar uma task:
-POST: `/src/controllers/delete-task.php`
+DELETE: `/src/controllers/delete-task.php`
+
+### Deletar todas as tasks de uma vez:
+POST: `/src/controllers/delete-all-tasks.php`
