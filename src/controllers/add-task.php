@@ -6,7 +6,7 @@ require __DIR__ . "/../functions/uuid-generate.php";
 
 $body = $_REQUEST;
 
-foreach (["name", "description"] as $param) {
+foreach (["name"] as $param) {
   if (!array_key_exists($param, $body)) {
     echo json_encode([
       "success" => false,
@@ -14,6 +14,14 @@ foreach (["name", "description"] as $param) {
     ]);
     die;
   }
+}
+
+if (strlen($body["name"]) === 0) {
+  echo json_encode([
+    "success" => false,
+    "message" => "Campo name não pode ser vazio!"
+  ]);
+  die;
 }
 
 $uuid = uuidGenerate();
